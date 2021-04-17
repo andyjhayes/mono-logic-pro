@@ -1,0 +1,12 @@
+{
+	"name": "Logic Pro",
+	"id": "com.apple.logic10",
+	"bundle": [
+	    "com.apple.logic10",
+	    "com.apple.logicpro"
+	],
+	"connection": [],
+	"modes": [],
+	"additionalActions": [ "midi" ],
+	"exclusive": "mac"
+}
