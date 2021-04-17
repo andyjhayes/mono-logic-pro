@@ -1,1078 +1,1106 @@
 {
-	"button": [
-		{
-			"name": "playheadRw",
-			"label": "Transport.Rewind",
-			"info": "Moves the playhead back by one bar with each press.",
-			"press": {
-				"cc": 102,
-				"channel": 14,
-				"midi": "cc",
-				"offValue": 0,
-				"onValue": 127,
-				"toggle": false
-			}
-		},
-		{
-			"name": "playheadFf",
-			"label": "Transport.Forward",
-			"info": "Moves the playhead forward by one bar with each press.",
-			"press": {
-				"cc": 103,
-				"channel": 14,
-				"midi": "cc",
-				"offValue": 0,
-				"onValue": 127,
-				"toggle": false
-			}
-		},
-		{
-			"name": "playheadStop",
-			"label": "Transport.Stop",
-			"info": "Press to stop playback or recording.",
-			"press": {
-				"cc": 104,
-				"channel": 14,
-				"midi": "cc",
-				"offValue": 0,
-				"onValue": 127,
-				"toggle": false
-			}
-		},
-		{
-			"name": "play",
-			"label": "Transport.Play",
-			"info": "Press to initiate playback.",
-			"press": {
-				"cc": 105,
-				"channel": 14,
-				"midi": "cc",
-				"offValue": 0,
-				"onValue": 127,
-				"toggle": false
-			}
-		},
-		{
-			"name": "cycle",
-			"label": "Transport.Cycle (loop playback)",
-			"info": "Toggles 'cycle' mode on\/off.",
-			"press": {
-				"cc": 106,
-				"channel": 14,
-				"midi": "cc",
-				"offValue": 0,
-				"onValue": 127,
-				"toggle": false
-			}
-		},
-		{
-			"name": "record",
-			"label": "Transport.Record",
-			"info": "Press to initiate recording.",
-			"press": {
-				"cc": 107,
-				"channel": 14,
-				"midi": "cc",
-				"offValue": 0,
-				"onValue": 127,
-				"toggle": false
-			}
-		}
-	],
-	"dial": [
-		{
-			"name": "midiModWheel",
-			"label": "MIDI Controls.Modulation Wheel (CC1)",
-			"info": "Controls modulation (CC1) on MIDI channel 1.",
-			"pose": {
-				"cc": 1,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiBreathController",
-			"label": "MIDI Controls.Breath Controller (CC2)",
-			"info": "Adjusts the breath controller (CC2) value on MIDI channel 1.",
-			"pose": {
-				"cc": 2,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiFootPedal",
-			"label": "MIDI Controls.Foot Pedal (CC4)",
-			"info": "Adjusts the foot pedal (CC4) value on MIDI channel 1.",
-			"pose": {
-				"cc": 4,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiVolume",
-			"label": "MIDI Controls.Volume (CC7)",
-			"info": "Controls volume (CC7) on MIDI channel 1.",
-			"pose": {
-				"cc": 7,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiBalance",
-			"label": "MIDI Controls.Balance (CC8)",
-			"info": "Controls balance (CC8) on MIDI channel 1.",
-			"pose": {
-				"cc": 8,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiPan",
-			"label": "MIDI Controls.Pan (CC10)",
-			"info": "Controls pan (CC10) on MIDI channel 1.",
-			"pose": {
-				"cc": 10,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiExpression",
-			"label": "MIDI Controls.Expression (CC11)",
-			"info": "Controls expression (CC11) on MIDI Channel 1.",
-			"pose": {
-				"cc": 11,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiAftertouchCh1",
-			"label": "MIDI Controls.Aftertouch (Ch 1)",
-			"info": "Controls aftertouch (channel pressure) on MIDI Channel 1.",
-			"pose": {
-				"channel": 1,
-				"midi": "pressure"
-			}
-		},
-		{
-			"name": "smartControl1",
-			"label": "Smart Controls.Smart Control 1",
-			"info": "Auto-assigns to Smart Control 1 in Logic.\n\nNote: Also auto-assigns to Host Automation #000 in Kontakt.",
-			"turn": {
-				"cc": 3,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl2",
-			"label": "Smart Controls.Smart Control 2",
-			"info": "Auto-assigns to Smart Control 2 in Logic.\n\nNote: Also auto-assigns to Host Automation #001 in Kontakt.",
-			"turn": {
-				"cc": 9,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl3",
-			"label": "Smart Controls.Smart Control 3",
-			"info": "Auto-assigns to Smart Control 3 in Logic.\n\nNote: Also auto-assigns to Host Automation #002 in Kontakt.",
-			"turn": {
-				"cc": 14,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl4",
-			"label": "Smart Controls.Smart Control 4",
-			"info": "Auto-assigns to Smart Control 4 in Logic.\n\nNote: Also auto-assigns to Host Automation #003 in Kontakt.",
-			"turn": {
-				"cc": 15,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl5",
-			"label": "Smart Controls.Smart Control 5",
-			"info": "Auto-assigns to Smart Control 5 in Logic.\n\nNote: Also auto-assigns to Host Automation #004 in Kontakt.",
-			"turn": {
-				"cc": 20,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl6",
-			"label": "Smart Controls.Smart Control 6",
-			"info": "Auto-assigns to Smart Control 6 in Logic.\n\nNote: Also auto-assigns to Host Automation #005 in Kontakt.",
-			"turn": {
-				"cc": 28,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl7",
-			"label": "Smart Controls.Smart Control 7",
-			"info": "Auto-assigns to Smart Control 7 in Logic.\n\nNote: Also auto-assigns to Host Automation #006 in Kontakt.",
-			"turn": {
-				"cc": 29,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl8",
-			"label": "Smart Controls.Smart Control 8",
-			"info": "Auto-assigns to Smart Control 8 in Logic.\n\nNote: Also auto-assigns to Host Automation #007 in Kontakt.",
-			"turn": {
-				"cc": 30,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl9",
-			"label": "Smart Controls.Smart Control 9",
-			"info": "Auto-assigns to Smart Control 9 in Logic.\n\nNote: Also auto-assigns to Host Automation #008 in Kontakt.",
-			"turn": {
-				"cc": 31,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl10",
-			"label": "Smart Controls.Smart Control 10",
-			"info": "Auto-assigns to Smart Control 10 in Logic.\n\nNote: Also auto-assigns to Host Automation #009 in Kontakt.",
-			"turn": {
-				"cc": 85,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl11",
-			"label": "Smart Controls.Smart Control 11",
-			"info": "Auto-assigns to Smart Control 11 in Logic.\n\nNote: Also auto-assigns to Host Automation #010 in Kontakt.",
-			"turn": {
-				"cc": 86,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl12",
-			"label": "Smart Controls.Smart Control 12",
-			"info": "Auto-assigns to Smart Control 12 in Logic.\n\nNote: Also auto-assigns to Host Automation #011 in Kontakt.",
-			"turn": {
-				"cc": 87,
-				"channel": 14,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl13",
-			"label": "Smart Controls.Smart Control 13",
-			"info": "Auto-assigns to Smart Control 13 in Logic.\n\nNote: Also auto-assigns to Host Automation #012 in Kontakt.",
-			"turn": {
-				"cc": 3,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl14",
-			"label": "Smart Controls.Smart Control 14",
-			"info": "Auto-assigns to Smart Control 14 in Logic.\n\nNote: Also auto-assigns to Host Automation #013 in Kontakt.",
-			"turn": {
-				"cc": 9,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl15",
-			"label": "Smart Controls.Smart Control 15",
-			"info": "Auto-assigns to Smart Control 15 in Logic.\n\nNote: Also auto-assigns to Host Automation #014 in Kontakt.",
-			"turn": {
-				"cc": 14,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl16",
-			"label": "Smart Controls.Smart Control 16",
-			"info": "Auto-assigns to Smart Control 16 in Logic.\n\nNote: Also auto-assigns to Host Automation #015 in Kontakt.",
-			"turn": {
-				"cc": 15,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl17",
-			"label": "Smart Controls.Smart Control 17",
-			"info": "Auto-assigns to Smart Control 17 in Logic.\n\nNote: Also auto-assigns to Host Automation #016 in Kontakt.",
-			"turn": {
-				"cc": 20,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl18",
-			"label": "Smart Controls.Smart Control 18",
-			"info": "Auto-assigns to Smart Control 18 in Logic.\n\nNote: Also auto-assigns to Host Automation #017 in Kontakt.",
-			"turn": {
-				"cc": 28,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl19",
-			"label": "Smart Controls.Smart Control 19",
-			"info": "Auto-assigns to Smart Control 19 in Logic.\n\nNote: Also auto-assigns to Host Automation #018 in Kontakt.",
-			"turn": {
-				"cc": 29,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl20",
-			"label": "Smart Controls.Smart Control 20",
-			"info": "Auto-assigns to Smart Control 20 in Logic.\n\nNote: Also auto-assigns to Host Automation #019 in Kontakt.",
-			"turn": {
-				"cc": 30,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl21",
-			"label": "Smart Controls.Smart Control 21",
-			"info": "Auto-assigns to Smart Control 21 in Logic.\n\nNote: Also auto-assigns to Host Automation #020 in Kontakt.",
-			"turn": {
-				"cc": 31,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl22",
-			"label": "Smart Controls.Smart Control 22",
-			"info": "Auto-assigns to Smart Control 22 in Logic.\n\nNote: Also auto-assigns to Host Automation #021 in Kontakt.",
-			"turn": {
-				"cc": 85,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl23",
-			"label": "Smart Controls.Smart Control 23",
-			"info": "Auto-assigns to Smart Control 23 in Logic.\n\nNote: Also auto-assigns to Host Automation #022 in Kontakt.",
-			"turn": {
-				"cc": 86,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "smartControl24",
-			"label": "Smart Controls.Smart Control 24",
-			"info": "Auto-assigns to Smart Control 24 in Logic.\n\nNote: Also auto-assigns to Host Automation #023 in Kontakt.",
-			"turn": {
-				"cc": 87,
-				"channel": 15,
-				"midi": "cc"
-			},
-			"sensitivity": 8
-		},
-		{
-			"name": "spitfireSpeed",
-			"label": "Spitfire Audio Libraries.Speed (CC16)",
-			"info": "Controls speed (CC16) on MIDI Channel 1.",
-			"pose": {
-				"cc": 16,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireRelease",
-			"label": "Spitfire Audio Libraries.Release (CC17)",
-			"info": "Controls release (CC17) on MIDI Channel 1.",
-			"pose": {
-				"cc": 17,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireTightness",
-			"label": "Spitfire Audio Libraries.Tightness (CC18)",
-			"info": "Controls tightness (CC18) on MIDI Channel 1.",
-			"pose": {
-				"cc": 18,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireReverb",
-			"label": "Spitfire Audio Libraries.Reverb (CC19)",
-			"info": "Controls reverb (CC19) on MIDI Channel 1.",
-			"pose": {
-				"cc": 19,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireVibrato",
-			"label": "Spitfire Audio Libraries.Vibrato (CC21)",
-			"info": "Controls reverb (CC21) on MIDI Channel 1.",
-			"pose": {
-				"cc": 21,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic1",
-			"label": "Spitfire Audio Libraries.Microphone 1 (CC22)",
-			"info": "Controls the microphone 1 level (CC22) on MIDI Channel 1.",
-			"pose": {
-				"cc": 22,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic2",
-			"label": "Spitfire Audio Libraries.Microphone 2 (CC23)",
-			"info": "Controls the microphone 2 level (CC23) on MIDI Channel 1.",
-			"pose": {
-				"cc": 23,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic3",
-			"label": "Spitfire Audio Libraries.Microphone 3 (CC24)",
-			"info": "Controls the microphone 3 level (CC24) on MIDI Channel 1.",
-			"pose": {
-				"cc": 24,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic4",
-			"label": "Spitfire Audio Libraries.Microphone 4 (CC25)",
-			"info": "Controls the microphone 4 level (CC25) on MIDI Channel 1.",
-			"pose": {
-				"cc": 25,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic5",
-			"label": "Spitfire Audio Libraries.Microphone 5 (CC26)",
-			"info": "Controls the microphone 5 level (CC26) on MIDI Channel 1.",
-			"pose": {
-				"cc": 26,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic6",
-			"label": "Spitfire Audio Libraries.Microphone 6 (CC27)",
-			"info": "Controls the microphone 6 level (CC27) on MIDI Channel 1.",
-			"pose": {
-				"cc": 27,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireUacc",
-			"label": "Spitfire Audio Libraries.UACC (CC32)",
-			"info": "Controls the universal articulation controller feature (CC32) for supported Spitfire libraries on MIDI Channel 1.",
-			"pose": {
-				"cc": 32,
-				"channel": 1,
-				"midi": "cc"
-			},
-			"sensitivity": 6
-		},
-		{
-			"name": "midiDrawbar1",
-			"label": "Vintage B3 Organ.Drawbar 1 (CC70)",
-			"info": "Controls drawbar 1 for the Vintage B3 Organ using CC70 on MIDI channel 1.",
-			"pose": {
-				"cc": 70,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar2",
-			"label": "Vintage B3 Organ.Drawbar 2 (CC71)",
-			"info": "Controls drawbar 2 for the Vintage B3 Organ using CC71 on MIDI channel 1.",
-			"pose": {
-				"cc": 71,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar3",
-			"label": "Vintage B3 Organ.Drawbar 3 (CC72)",
-			"info": "Controls drawbar 3 for the Vintage B3 Organ using CC72 on MIDI channel 1.",
-			"pose": {
-				"cc": 72,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar4",
-			"label": "Vintage B3 Organ.Drawbar 4 (CC73)",
-			"info": "Controls drawbar 4 for the Vintage B3 Organ using CC73 on MIDI channel 1.",
-			"pose": {
-				"cc": 73,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar5",
-			"label": "Vintage B3 Organ.Drawbar 5 (CC74)",
-			"info": "Controls drawbar 5 for the Vintage B3 Organ using CC74 on MIDI channel 1.",
-			"pose": {
-				"cc": 74,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar6",
-			"label": "Vintage B3 Organ.Drawbar 6 (CC75)",
-			"info": "Controls drawbar 6 for the Vintage B3 Organ using CC75 on MIDI channel 1.",
-			"pose": {
-				"cc": 75,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar7",
-			"label": "Vintage B3 Organ.Drawbar 7 (CC76)",
-			"info": "Controls drawbar 7 for the Vintage B3 Organ using CC76 on MIDI channel 1.",
-			"pose": {
-				"cc": 76,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar8",
-			"label": "Vintage B3 Organ.Drawbar 8 (CC77)",
-			"info": "Controls drawbar 8 for the Vintage B3 Organ using CC77 on MIDI channel 1.",
-			"pose": {
-				"cc": 77,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar9",
-			"label": "Vintage B3 Organ.Drawbar 9 (CC78)",
-			"info": "Controls drawbar 9 for the Vintage B3 Organ using CC78 on MIDI channel 1.",
-			"pose": {
-				"cc": 78,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiDrawbar78",
-			"label": "Vintage B3 Organ.Drawbars 7+8 (CC79)",
-			"info": "Controls drawbars 7 and 8 (together) for the Vintage B3 Organ using CC79 on MIDI channel 1.",
-			"pose": {
-				"cc": 79,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiLeslieRotator",
-			"label": "Vintage B3 Organ.Rotation (CC80)",
-			"info": "Controls the rotating speaker effect for the Vintage B3 Organ using CC79 on MIDI channel 1.",
-			"pose": {
-				"cc": 80,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "horizontalZoom",
-			"label": "View.Horizontal Zoom",
-			"info": "Turn to zoom in and out of track view.",
-			"leftTurn": {
-				"key": "left",
-				"modifiers": [
-					"command"
-				],
-				"name": "",
-				"virtual": true
-			},
-			"rightTurn": {
-				"key": "right",
-				"modifiers": [
-					"command"
-				],
-				"name": "",
-				"virtual": true
-			},
-			"sensitivity": 7
-		},
-		{
-			"name": "playhead",
-			"label": "Transport.Playhead (Bars)",
-			"info": "Turn to move the playhead backwards and forwards by 1 bar at a time.\nPress to return to the beginning of the project.",
-			"leftTurn": {
-				"key": ",",
-				"modifiers": [],
-				"name": ",",
-				"virtual": true
-			},
-			"press": {
-				"key": "enter",
-				"modifiers": [],
-				"name": "enter",
-				"virtual": true
-			},
-			"rightTurn": {
-				"key": ".",
-				"modifiers": [],
-				"name": ".",
-				"virtual": true
-			},
-			"sensitivity": 8
-		}
-	],
+    "button": [
+        {
+            "name": "playheadRw",
+            "label": "Transport.Rewind",
+            "info": "Moves the playhead back by one bar with each press.",
+            "press": {
+                "cc": 102,
+                "channel": 14,
+                "midi": "cc",
+                "offValue": 0,
+                "onValue": 127,
+                "toggle": false
+            }
+        },
+        {
+            "name": "playheadFf",
+            "label": "Transport.Forward",
+            "info": "Moves the playhead forward by one bar with each press.",
+            "press": {
+                "cc": 103,
+                "channel": 14,
+                "midi": "cc",
+                "offValue": 0,
+                "onValue": 127,
+                "toggle": false
+            }
+        },
+        {
+            "name": "playheadStop",
+            "label": "Transport.Stop",
+            "info": "Press to stop playback or recording.",
+            "press": {
+                "cc": 104,
+                "channel": 14,
+                "midi": "cc",
+                "offValue": 0,
+                "onValue": 127,
+                "toggle": false
+            }
+        },
+        {
+            "name": "play",
+            "label": "Transport.Play",
+            "info": "Press to initiate playback.",
+            "press": {
+                "cc": 105,
+                "channel": 14,
+                "midi": "cc",
+                "offValue": 0,
+                "onValue": 127,
+                "toggle": false
+            }
+        },
+        {
+            "name": "record",
+            "label": "Transport.Record",
+            "info": "Press to initiate recording.",
+            "press": {
+                "cc": 107,
+                "channel": 14,
+                "midi": "cc",
+                "offValue": 0,
+                "onValue": 127,
+                "toggle": false
+            }
+        },
+        {
+            "name": "cycle",
+            "label": "Transport.Cycle (loop playback)",
+            "info": "Toggles 'cycle' mode on\/off.",
+            "press": {
+                "cc": 106,
+                "channel": 14,
+                "midi": "cc",
+                "offValue": 0,
+                "onValue": 127,
+                "toggle": false
+            }
+        },
+        {
+            "name": "playPause",
+            "label": "Transport.Key Commands.Play\/Pause",
+            "info": "Toggles playback state between playing and paused.\n\nPress and hold to return to the beginning of the project.",
+            "press": {
+                "key": "space",
+                "modifiers": [],
+                "name": "space",
+                "virtual": true
+            },
+            "pressAndHold": {
+                "key": "enter",
+                "modifiers": [],
+                "name": "enter",
+                "virtual": true
+            }
+        },
+        {
+            "name": "playheadReturn",
+            "label": "Transport.Key Commands.Go to Beginning",
+            "info": "Returns the playhead to the beginning of the project.",
+            "press": {
+                "key": "enter",
+                "modifiers": [],
+                "name": "enter",
+                "virtual": true
+            }
+        }
+    ],
+    "dial": [
+        {
+            "name": "midiModWheel",
+            "label": "MIDI Controls.Modulation Wheel (CC1)",
+            "info": "Controls modulation (CC1) on MIDI channel 1.",
+            "pose": {
+                "cc": 1,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiBreathController",
+            "label": "MIDI Controls.Breath Controller (CC2)",
+            "info": "Adjusts the breath controller (CC2) value on MIDI channel 1.",
+            "pose": {
+                "cc": 2,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiFootPedal",
+            "label": "MIDI Controls.Foot Pedal (CC4)",
+            "info": "Adjusts the foot pedal (CC4) value on MIDI channel 1.",
+            "pose": {
+                "cc": 4,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiVolume",
+            "label": "MIDI Controls.Volume (CC7)",
+            "info": "Controls volume (CC7) on MIDI channel 1.",
+            "pose": {
+                "cc": 7,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiBalance",
+            "label": "MIDI Controls.Balance (CC8)",
+            "info": "Controls balance (CC8) on MIDI channel 1.",
+            "pose": {
+                "cc": 8,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiPan",
+            "label": "MIDI Controls.Pan (CC10)",
+            "info": "Controls pan (CC10) on MIDI channel 1.",
+            "pose": {
+                "cc": 10,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiExpression",
+            "label": "MIDI Controls.Expression (CC11)",
+            "info": "Controls expression (CC11) on MIDI Channel 1.",
+            "pose": {
+                "cc": 11,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiAftertouchCh1",
+            "label": "MIDI Controls.Aftertouch (Ch 1)",
+            "info": "Controls aftertouch (channel pressure) on MIDI Channel 1.",
+            "pose": {
+                "channel": 1,
+                "midi": "pressure"
+            }
+        },
+        {
+            "name": "smartControl1",
+            "label": "Smart Controls.Smart Control 1",
+            "info": "Auto-assigns to Smart Control 1 in Logic.\n\nNote: Also auto-assigns to Host Automation #000 in Kontakt.",
+            "turn": {
+                "cc": 3,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl2",
+            "label": "Smart Controls.Smart Control 2",
+            "info": "Auto-assigns to Smart Control 2 in Logic.\n\nNote: Also auto-assigns to Host Automation #001 in Kontakt.",
+            "turn": {
+                "cc": 9,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl3",
+            "label": "Smart Controls.Smart Control 3",
+            "info": "Auto-assigns to Smart Control 3 in Logic.\n\nNote: Also auto-assigns to Host Automation #002 in Kontakt.",
+            "turn": {
+                "cc": 14,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl4",
+            "label": "Smart Controls.Smart Control 4",
+            "info": "Auto-assigns to Smart Control 4 in Logic.\n\nNote: Also auto-assigns to Host Automation #003 in Kontakt.",
+            "turn": {
+                "cc": 15,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl5",
+            "label": "Smart Controls.Smart Control 5",
+            "info": "Auto-assigns to Smart Control 5 in Logic.\n\nNote: Also auto-assigns to Host Automation #004 in Kontakt.",
+            "turn": {
+                "cc": 20,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl6",
+            "label": "Smart Controls.Smart Control 6",
+            "info": "Auto-assigns to Smart Control 6 in Logic.\n\nNote: Also auto-assigns to Host Automation #005 in Kontakt.",
+            "turn": {
+                "cc": 28,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl7",
+            "label": "Smart Controls.Smart Control 7",
+            "info": "Auto-assigns to Smart Control 7 in Logic.\n\nNote: Also auto-assigns to Host Automation #006 in Kontakt.",
+            "turn": {
+                "cc": 29,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl8",
+            "label": "Smart Controls.Smart Control 8",
+            "info": "Auto-assigns to Smart Control 8 in Logic.\n\nNote: Also auto-assigns to Host Automation #007 in Kontakt.",
+            "turn": {
+                "cc": 30,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl9",
+            "label": "Smart Controls.Smart Control 9",
+            "info": "Auto-assigns to Smart Control 9 in Logic.\n\nNote: Also auto-assigns to Host Automation #008 in Kontakt.",
+            "turn": {
+                "cc": 31,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl10",
+            "label": "Smart Controls.Smart Control 10",
+            "info": "Auto-assigns to Smart Control 10 in Logic.\n\nNote: Also auto-assigns to Host Automation #009 in Kontakt.",
+            "turn": {
+                "cc": 85,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl11",
+            "label": "Smart Controls.Smart Control 11",
+            "info": "Auto-assigns to Smart Control 11 in Logic.\n\nNote: Also auto-assigns to Host Automation #010 in Kontakt.",
+            "turn": {
+                "cc": 86,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl12",
+            "label": "Smart Controls.Smart Control 12",
+            "info": "Auto-assigns to Smart Control 12 in Logic.\n\nNote: Also auto-assigns to Host Automation #011 in Kontakt.",
+            "turn": {
+                "cc": 87,
+                "channel": 14,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl13",
+            "label": "Smart Controls.Smart Control 13",
+            "info": "Auto-assigns to Smart Control 13 in Logic.\n\nNote: Also auto-assigns to Host Automation #012 in Kontakt.",
+            "turn": {
+                "cc": 3,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl14",
+            "label": "Smart Controls.Smart Control 14",
+            "info": "Auto-assigns to Smart Control 14 in Logic.\n\nNote: Also auto-assigns to Host Automation #013 in Kontakt.",
+            "turn": {
+                "cc": 9,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl15",
+            "label": "Smart Controls.Smart Control 15",
+            "info": "Auto-assigns to Smart Control 15 in Logic.\n\nNote: Also auto-assigns to Host Automation #014 in Kontakt.",
+            "turn": {
+                "cc": 14,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl16",
+            "label": "Smart Controls.Smart Control 16",
+            "info": "Auto-assigns to Smart Control 16 in Logic.\n\nNote: Also auto-assigns to Host Automation #015 in Kontakt.",
+            "turn": {
+                "cc": 15,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl17",
+            "label": "Smart Controls.Smart Control 17",
+            "info": "Auto-assigns to Smart Control 17 in Logic.\n\nNote: Also auto-assigns to Host Automation #016 in Kontakt.",
+            "turn": {
+                "cc": 20,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl18",
+            "label": "Smart Controls.Smart Control 18",
+            "info": "Auto-assigns to Smart Control 18 in Logic.\n\nNote: Also auto-assigns to Host Automation #017 in Kontakt.",
+            "turn": {
+                "cc": 28,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl19",
+            "label": "Smart Controls.Smart Control 19",
+            "info": "Auto-assigns to Smart Control 19 in Logic.\n\nNote: Also auto-assigns to Host Automation #018 in Kontakt.",
+            "turn": {
+                "cc": 29,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl20",
+            "label": "Smart Controls.Smart Control 20",
+            "info": "Auto-assigns to Smart Control 20 in Logic.\n\nNote: Also auto-assigns to Host Automation #019 in Kontakt.",
+            "turn": {
+                "cc": 30,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl21",
+            "label": "Smart Controls.Smart Control 21",
+            "info": "Auto-assigns to Smart Control 21 in Logic.\n\nNote: Also auto-assigns to Host Automation #020 in Kontakt.",
+            "turn": {
+                "cc": 31,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl22",
+            "label": "Smart Controls.Smart Control 22",
+            "info": "Auto-assigns to Smart Control 22 in Logic.\n\nNote: Also auto-assigns to Host Automation #021 in Kontakt.",
+            "turn": {
+                "cc": 85,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl23",
+            "label": "Smart Controls.Smart Control 23",
+            "info": "Auto-assigns to Smart Control 23 in Logic.\n\nNote: Also auto-assigns to Host Automation #022 in Kontakt.",
+            "turn": {
+                "cc": 86,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "smartControl24",
+            "label": "Smart Controls.Smart Control 24",
+            "info": "Auto-assigns to Smart Control 24 in Logic.\n\nNote: Also auto-assigns to Host Automation #023 in Kontakt.",
+            "turn": {
+                "cc": 87,
+                "channel": 15,
+                "midi": "cc"
+            },
+            "sensitivity": 8
+        },
+        {
+            "name": "spitfireSpeed",
+            "label": "Spitfire Audio Libraries.Speed (CC16)",
+            "info": "Controls speed (CC16) on MIDI Channel 1.",
+            "pose": {
+                "cc": 16,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireRelease",
+            "label": "Spitfire Audio Libraries.Release (CC17)",
+            "info": "Controls release (CC17) on MIDI Channel 1.",
+            "pose": {
+                "cc": 17,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireTightness",
+            "label": "Spitfire Audio Libraries.Tightness (CC18)",
+            "info": "Controls tightness (CC18) on MIDI Channel 1.",
+            "pose": {
+                "cc": 18,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireReverb",
+            "label": "Spitfire Audio Libraries.Reverb (CC19)",
+            "info": "Controls reverb (CC19) on MIDI Channel 1.",
+            "pose": {
+                "cc": 19,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireVibrato",
+            "label": "Spitfire Audio Libraries.Vibrato (CC21)",
+            "info": "Controls reverb (CC21) on MIDI Channel 1.",
+            "pose": {
+                "cc": 21,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic1",
+            "label": "Spitfire Audio Libraries.Microphone 1 (CC22)",
+            "info": "Controls the microphone 1 level (CC22) on MIDI Channel 1.",
+            "pose": {
+                "cc": 22,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic2",
+            "label": "Spitfire Audio Libraries.Microphone 2 (CC23)",
+            "info": "Controls the microphone 2 level (CC23) on MIDI Channel 1.",
+            "pose": {
+                "cc": 23,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic3",
+            "label": "Spitfire Audio Libraries.Microphone 3 (CC24)",
+            "info": "Controls the microphone 3 level (CC24) on MIDI Channel 1.",
+            "pose": {
+                "cc": 24,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic4",
+            "label": "Spitfire Audio Libraries.Microphone 4 (CC25)",
+            "info": "Controls the microphone 4 level (CC25) on MIDI Channel 1.",
+            "pose": {
+                "cc": 25,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic5",
+            "label": "Spitfire Audio Libraries.Microphone 5 (CC26)",
+            "info": "Controls the microphone 5 level (CC26) on MIDI Channel 1.",
+            "pose": {
+                "cc": 26,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic6",
+            "label": "Spitfire Audio Libraries.Microphone 6 (CC27)",
+            "info": "Controls the microphone 6 level (CC27) on MIDI Channel 1.",
+            "pose": {
+                "cc": 27,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireUacc",
+            "label": "Spitfire Audio Libraries.UACC (CC32)",
+            "info": "Controls the universal articulation controller feature (CC32) for supported Spitfire libraries on MIDI Channel 1.",
+            "pose": {
+                "cc": 32,
+                "channel": 1,
+                "midi": "cc"
+            },
+            "sensitivity": 6
+        },
+        {
+            "name": "midiDrawbar1",
+            "label": "Vintage B3 Organ.Drawbar 1 (CC70)",
+            "info": "Controls drawbar 1 for the Vintage B3 Organ using CC70 on MIDI channel 1.",
+            "pose": {
+                "cc": 70,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar2",
+            "label": "Vintage B3 Organ.Drawbar 2 (CC71)",
+            "info": "Controls drawbar 2 for the Vintage B3 Organ using CC71 on MIDI channel 1.",
+            "pose": {
+                "cc": 71,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar3",
+            "label": "Vintage B3 Organ.Drawbar 3 (CC72)",
+            "info": "Controls drawbar 3 for the Vintage B3 Organ using CC72 on MIDI channel 1.",
+            "pose": {
+                "cc": 72,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar4",
+            "label": "Vintage B3 Organ.Drawbar 4 (CC73)",
+            "info": "Controls drawbar 4 for the Vintage B3 Organ using CC73 on MIDI channel 1.",
+            "pose": {
+                "cc": 73,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar5",
+            "label": "Vintage B3 Organ.Drawbar 5 (CC74)",
+            "info": "Controls drawbar 5 for the Vintage B3 Organ using CC74 on MIDI channel 1.",
+            "pose": {
+                "cc": 74,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar6",
+            "label": "Vintage B3 Organ.Drawbar 6 (CC75)",
+            "info": "Controls drawbar 6 for the Vintage B3 Organ using CC75 on MIDI channel 1.",
+            "pose": {
+                "cc": 75,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar7",
+            "label": "Vintage B3 Organ.Drawbar 7 (CC76)",
+            "info": "Controls drawbar 7 for the Vintage B3 Organ using CC76 on MIDI channel 1.",
+            "pose": {
+                "cc": 76,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar8",
+            "label": "Vintage B3 Organ.Drawbar 8 (CC77)",
+            "info": "Controls drawbar 8 for the Vintage B3 Organ using CC77 on MIDI channel 1.",
+            "pose": {
+                "cc": 77,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar9",
+            "label": "Vintage B3 Organ.Drawbar 9 (CC78)",
+            "info": "Controls drawbar 9 for the Vintage B3 Organ using CC78 on MIDI channel 1.",
+            "pose": {
+                "cc": 78,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar78",
+            "label": "Vintage B3 Organ.Drawbars 7+8 (CC79)",
+            "info": "Controls drawbars 7 and 8 (together) for the Vintage B3 Organ using CC79 on MIDI channel 1.",
+            "pose": {
+                "cc": 79,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiLeslieRotator",
+            "label": "Vintage B3 Organ.Rotation (CC80)",
+            "info": "Controls the rotating speaker effect for the Vintage B3 Organ using CC79 on MIDI channel 1.",
+            "pose": {
+                "cc": 80,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "horizontalZoom",
+            "label": "View.Horizontal Zoom",
+            "info": "Turn to zoom in and out of track view.",
+            "leftTurn": {
+                "key": "left",
+                "modifiers": [
+                    "command"
+                ],
+                "name": "",
+                "virtual": true
+            },
+            "rightTurn": {
+                "key": "right",
+                "modifiers": [
+                    "command"
+                ],
+                "name": "",
+                "virtual": true
+            },
+            "sensitivity": 7
+        },
+        {
+            "name": "playhead",
+            "label": "Transport.Playhead (Bars)",
+            "info": "Turn to move the playhead backwards and forwards by 1 bar at a time.\nPress to return to the beginning of the project.",
+            "leftTurn": {
+                "key": ",",
+                "modifiers": [],
+                "name": ",",
+                "virtual": true
+            },
+            "press": {
+                "key": "enter",
+                "modifiers": [],
+                "name": "enter",
+                "virtual": true
+            },
+            "rightTurn": {
+                "key": ".",
+                "modifiers": [],
+                "name": ".",
+                "virtual": true
+            },
+            "sensitivity": 8
+        }
+    ],
     "slider": [
-    	{
-			"name": "midiModWheel",
-			"label": "MIDI Controls.Modulation Wheel (CC1)",
-			"info": "Controls modulation (CC1) on MIDI channel 1.",
-			"pose": {
-				"cc": 1,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiBreathController",
-			"label": "MIDI Controls.Breath Controller (CC2)",
-			"info": "Adjusts the breath controller (CC2) value on MIDI channel 1.",
-			"pose": {
-				"cc": 2,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiFootPedal",
-			"label": "MIDI Controls.Foot Pedal (CC4)",
-			"info": "Adjusts the foot pedal (CC4) value on MIDI channel 1.",
-			"pose": {
-				"cc": 4,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiVolume",
-			"label": "MIDI Controls.Volume (CC7)",
-			"info": "Controls volume (CC7) on MIDI channel 1.",
-			"pose": {
-				"cc": 7,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiBalance",
-			"label": "MIDI Controls.Balance (CC8)",
-			"info": "Controls balance (CC8) on MIDI channel 1.",
-			"pose": {
-				"cc": 8,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiPan",
-			"label": "MIDI Controls.Pan (CC10)",
-			"info": "Controls pan (CC10) on MIDI channel 1.",
-			"pose": {
-				"cc": 10,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiExpression",
-			"label": "MIDI Controls.Expression (CC11)",
-			"info": "Controls expression (CC11) on MIDI Channel 1.",
-			"pose": {
-				"cc": 11,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "midiAftertouchCh1",
-			"label": "MIDI Controls.Aftertouch (Ch 1)",
-			"info": "Controls aftertouch (channel pressure) on MIDI Channel 1.",
-			"pose": {
-				"channel": 1,
-				"midi": "pressure"
-			}
-		},
-		{
-			"name": "spitfireSpeed",
-			"label": "Spitfire Audio Libraries.Speed (CC16)",
-			"info": "Controls speed (CC16) on MIDI Channel 1.",
-			"pose": {
-				"cc": 16,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireRelease",
-			"label": "Spitfire Audio Libraries.Release (CC17)",
-			"info": "Controls release (CC17) on MIDI Channel 1.",
-			"pose": {
-				"cc": 17,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireTightness",
-			"label": "Spitfire Audio Libraries.Tightness (CC18)",
-			"info": "Controls tightness (CC18) on MIDI Channel 1.",
-			"pose": {
-				"cc": 18,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireReverb",
-			"label": "Spitfire Audio Libraries.Reverb (CC19)",
-			"info": "Controls reverb (CC19) on MIDI Channel 1.",
-			"pose": {
-				"cc": 19,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireVibrato",
-			"label": "Spitfire Audio Libraries.Vibrato (CC21)",
-			"info": "Controls reverb (CC21) on MIDI Channel 1.",
-			"pose": {
-				"cc": 21,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic1",
-			"label": "Spitfire Audio Libraries.Microphone 1 (CC22)",
-			"info": "Controls the microphone 1 level (CC22) on MIDI Channel 1.",
-			"pose": {
-				"cc": 22,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic2",
-			"label": "Spitfire Audio Libraries.Microphone 2 (CC23)",
-			"info": "Controls the microphone 2 level (CC23) on MIDI Channel 1.",
-			"pose": {
-				"cc": 23,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic3",
-			"label": "Spitfire Audio Libraries.Microphone 3 (CC24)",
-			"info": "Controls the microphone 3 level (CC24) on MIDI Channel 1.",
-			"pose": {
-				"cc": 24,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic4",
-			"label": "Spitfire Audio Libraries.Microphone 4 (CC25)",
-			"info": "Controls the microphone 4 level (CC25) on MIDI Channel 1.",
-			"pose": {
-				"cc": 25,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic5",
-			"label": "Spitfire Audio Libraries.Microphone 5 (CC26)",
-			"info": "Controls the microphone 5 level (CC26) on MIDI Channel 1.",
-			"pose": {
-				"cc": 26,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-		{
-			"name": "spitfireMic6",
-			"label": "Spitfire Audio Libraries.Microphone 6 (CC27)",
-			"info": "Controls the microphone 6 level (CC27) on MIDI Channel 1.",
-			"pose": {
-				"cc": 27,
-				"channel": 1,
-				"midi": "cc"
-			}
-		},
-    	{
-    		"name": "midiDrawbar1",
-    		"label": "Vintage B3 Organ.Drawbar 1 (CC70)",
-    		"info": "Controls drawbar 1 for the Vintage B3 Organ using CC70 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 70,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar2",
-    		"label": "Vintage B3 Organ.Drawbar 2 (CC71)",
-    		"info": "Controls drawbar 2 for the Vintage B3 Organ using CC71 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 71,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar3",
-    		"label": "Vintage B3 Organ.Drawbar 3 (CC72)",
-    		"info": "Controls drawbar 3 for the Vintage B3 Organ using CC72 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 72,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar4",
-    		"label": "Vintage B3 Organ.Drawbar 4 (CC73)",
-    		"info": "Controls drawbar 4 for the Vintage B3 Organ using CC73 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 73,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar5",
-    		"label": "Vintage B3 Organ.Drawbar 5 (CC74)",
-    		"info": "Controls drawbar 5 for the Vintage B3 Organ using CC74 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 74,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar6",
-    		"label": "Vintage B3 Organ.Drawbar 6 (CC75)",
-    		"info": "Controls drawbar 6 for the Vintage B3 Organ using CC75 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 75,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar7",
-    		"label": "Vintage B3 Organ.Drawbar 7 (CC76)",
-    		"info": "Controls drawbar 7 for the Vintage B3 Organ using CC76 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 76,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar8",
-    		"label": "Vintage B3 Organ.Drawbar 8 (CC77)",
-    		"info": "Controls drawbar 8 for the Vintage B3 Organ using CC77 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 77,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar9",
-    		"label": "Vintage B3 Organ.Drawbar 9 (CC78)",
-    		"info": "Controls drawbar 9 for the Vintage B3 Organ using CC78 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 78,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiDrawbar78",
-    		"label": "Vintage B3 Organ.Drawbars 7+8 (CC79)",
-    		"info": "Controls drawbars 7 and 8 (together) for the Vintage B3 Organ using CC79 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 79,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	},
-    	{
-    		"name": "midiLeslieRotator",
-    		"label": "Vintage B3 Organ.Rotation (CC80)",
-    		"info": "Controls the rotating speaker effect for the Vintage B3 Organ using CC79 on MIDI channel 1.",
-    		"pose": {
-    			"cc": 80,
-    			"channel": 1,
-    			"midi": "cc"
-    		}
-    	}
+        {
+            "name": "midiModWheel",
+            "label": "MIDI Controls.Modulation Wheel (CC1)",
+            "info": "Controls modulation (CC1) on MIDI channel 1.",
+            "pose": {
+                "cc": 1,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiBreathController",
+            "label": "MIDI Controls.Breath Controller (CC2)",
+            "info": "Adjusts the breath controller (CC2) value on MIDI channel 1.",
+            "pose": {
+                "cc": 2,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiFootPedal",
+            "label": "MIDI Controls.Foot Pedal (CC4)",
+            "info": "Adjusts the foot pedal (CC4) value on MIDI channel 1.",
+            "pose": {
+                "cc": 4,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiVolume",
+            "label": "MIDI Controls.Volume (CC7)",
+            "info": "Controls volume (CC7) on MIDI channel 1.",
+            "pose": {
+                "cc": 7,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiBalance",
+            "label": "MIDI Controls.Balance (CC8)",
+            "info": "Controls balance (CC8) on MIDI channel 1.",
+            "pose": {
+                "cc": 8,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiPan",
+            "label": "MIDI Controls.Pan (CC10)",
+            "info": "Controls pan (CC10) on MIDI channel 1.",
+            "pose": {
+                "cc": 10,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiExpression",
+            "label": "MIDI Controls.Expression (CC11)",
+            "info": "Controls expression (CC11) on MIDI Channel 1.",
+            "pose": {
+                "cc": 11,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiAftertouchCh1",
+            "label": "MIDI Controls.Aftertouch (Ch 1)",
+            "info": "Controls aftertouch (channel pressure) on MIDI Channel 1.",
+            "pose": {
+                "channel": 1,
+                "midi": "pressure"
+            }
+        },
+        {
+            "name": "spitfireSpeed",
+            "label": "Spitfire Audio Libraries.Speed (CC16)",
+            "info": "Controls speed (CC16) on MIDI Channel 1.",
+            "pose": {
+                "cc": 16,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireRelease",
+            "label": "Spitfire Audio Libraries.Release (CC17)",
+            "info": "Controls release (CC17) on MIDI Channel 1.",
+            "pose": {
+                "cc": 17,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireTightness",
+            "label": "Spitfire Audio Libraries.Tightness (CC18)",
+            "info": "Controls tightness (CC18) on MIDI Channel 1.",
+            "pose": {
+                "cc": 18,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireReverb",
+            "label": "Spitfire Audio Libraries.Reverb (CC19)",
+            "info": "Controls reverb (CC19) on MIDI Channel 1.",
+            "pose": {
+                "cc": 19,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireVibrato",
+            "label": "Spitfire Audio Libraries.Vibrato (CC21)",
+            "info": "Controls reverb (CC21) on MIDI Channel 1.",
+            "pose": {
+                "cc": 21,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic1",
+            "label": "Spitfire Audio Libraries.Microphone 1 (CC22)",
+            "info": "Controls the microphone 1 level (CC22) on MIDI Channel 1.",
+            "pose": {
+                "cc": 22,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic2",
+            "label": "Spitfire Audio Libraries.Microphone 2 (CC23)",
+            "info": "Controls the microphone 2 level (CC23) on MIDI Channel 1.",
+            "pose": {
+                "cc": 23,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic3",
+            "label": "Spitfire Audio Libraries.Microphone 3 (CC24)",
+            "info": "Controls the microphone 3 level (CC24) on MIDI Channel 1.",
+            "pose": {
+                "cc": 24,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic4",
+            "label": "Spitfire Audio Libraries.Microphone 4 (CC25)",
+            "info": "Controls the microphone 4 level (CC25) on MIDI Channel 1.",
+            "pose": {
+                "cc": 25,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic5",
+            "label": "Spitfire Audio Libraries.Microphone 5 (CC26)",
+            "info": "Controls the microphone 5 level (CC26) on MIDI Channel 1.",
+            "pose": {
+                "cc": 26,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "spitfireMic6",
+            "label": "Spitfire Audio Libraries.Microphone 6 (CC27)",
+            "info": "Controls the microphone 6 level (CC27) on MIDI Channel 1.",
+            "pose": {
+                "cc": 27,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar1",
+            "label": "Vintage B3 Organ.Drawbar 1 (CC70)",
+            "info": "Controls drawbar 1 for the Vintage B3 Organ using CC70 on MIDI channel 1.",
+            "pose": {
+                "cc": 70,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar2",
+            "label": "Vintage B3 Organ.Drawbar 2 (CC71)",
+            "info": "Controls drawbar 2 for the Vintage B3 Organ using CC71 on MIDI channel 1.",
+            "pose": {
+                "cc": 71,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar3",
+            "label": "Vintage B3 Organ.Drawbar 3 (CC72)",
+            "info": "Controls drawbar 3 for the Vintage B3 Organ using CC72 on MIDI channel 1.",
+            "pose": {
+                "cc": 72,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar4",
+            "label": "Vintage B3 Organ.Drawbar 4 (CC73)",
+            "info": "Controls drawbar 4 for the Vintage B3 Organ using CC73 on MIDI channel 1.",
+            "pose": {
+                "cc": 73,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar5",
+            "label": "Vintage B3 Organ.Drawbar 5 (CC74)",
+            "info": "Controls drawbar 5 for the Vintage B3 Organ using CC74 on MIDI channel 1.",
+            "pose": {
+                "cc": 74,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar6",
+            "label": "Vintage B3 Organ.Drawbar 6 (CC75)",
+            "info": "Controls drawbar 6 for the Vintage B3 Organ using CC75 on MIDI channel 1.",
+            "pose": {
+                "cc": 75,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar7",
+            "label": "Vintage B3 Organ.Drawbar 7 (CC76)",
+            "info": "Controls drawbar 7 for the Vintage B3 Organ using CC76 on MIDI channel 1.",
+            "pose": {
+                "cc": 76,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar8",
+            "label": "Vintage B3 Organ.Drawbar 8 (CC77)",
+            "info": "Controls drawbar 8 for the Vintage B3 Organ using CC77 on MIDI channel 1.",
+            "pose": {
+                "cc": 77,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar9",
+            "label": "Vintage B3 Organ.Drawbar 9 (CC78)",
+            "info": "Controls drawbar 9 for the Vintage B3 Organ using CC78 on MIDI channel 1.",
+            "pose": {
+                "cc": 78,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiDrawbar78",
+            "label": "Vintage B3 Organ.Drawbars 7+8 (CC79)",
+            "info": "Controls drawbars 7 and 8 (together) for the Vintage B3 Organ using CC79 on MIDI channel 1.",
+            "pose": {
+                "cc": 79,
+                "channel": 1,
+                "midi": "cc"
+            }
+        },
+        {
+            "name": "midiLeslieRotator",
+            "label": "Vintage B3 Organ.Rotation (CC80)",
+            "info": "Controls the rotating speaker effect for the Vintage B3 Organ using CC79 on MIDI channel 1.",
+            "pose": {
+                "cc": 80,
+                "channel": 1,
+                "midi": "cc"
+            }
+        }
     ],
     "orbiter": [
-    	{
+        {
             "name": "midiPitchMod",
             "label": "MIDI Controls.Modulation & Pitch (CC1, Ch 1)",
             "info": "Turn controls modulation (CC1) on MIDI channel 1.\nTilt Y controls pitch bend on MIDI channel 1.\n\nNote: Tilt X is unassigned.",
-    		"posePsi": {
-    			"cc": 1,
-    			"channel": 1,
-    			"midi": "cc"
-    		},
-    		"poseY": {
-    			"channel": 1,
-    			"midi": "pitchbend"
-    		},
-    		"tiltSensitivity": 2,
-    		"turnSensitivity": 9
-    	},
-    	{
+            "posePsi": {
+                "cc": 1,
+                "channel": 1,
+                "midi": "cc"
+            },
+            "poseY": {
+                "channel": 1,
+                "midi": "pitchbend"
+            },
+            "tiltSensitivity": 2,
+            "turnSensitivity": 9
+        },
+        {
             "name": "midiPitchAftertouch",
             "label": "MIDI Controls.Aftertouch & Pitch (Ch 1)",
             "info": "Turn controls aftertouch (channel pressure) on MIDI channel 1.\nTilt Y controls pitch bend on MIDI channel 1.\n\nNote: Tilt X is unassigned.",
             "posePsi": {
-            	"channel": 1,
-            	"midi": "pressure"
+                "channel": 1,
+                "midi": "pressure"
             },
-    		"poseY": {
-    			"channel": 1,
-    			"midi": "pitchbend"
-    		},
-    		"tiltSensitivity": 2,
-    		"turnSensitivity": 9
-    	},
-    	{
-			"name": "horizontalZoom",
-			"label": "View.Horizontal Zoom",
-			"info": "Turn to zoom in and out of track view.\n\nNote: Tilt is unassigned.",
-			"leftTurn": {
-				"key": "left",
-				"modifiers": [
-					"command"
-				],
-				"name": "",
-				"virtual": true
-			},
-			"rightTurn": {
-				"key": "right",
-				"modifiers": [
-					"command"
-				],
-				"name": "",
-				"virtual": true
-			},
-			"turnSensitivity": 7
-		},
+            "poseY": {
+                "channel": 1,
+                "midi": "pitchbend"
+            },
+            "tiltSensitivity": 2,
+            "turnSensitivity": 9
+        },
         {
-			"name": "playhead",
-			"label": "Transport.Playhead (Bars)",
-			"info": "Turn to move the playhead backwards and forwards by 1 bar at a time.\n\nNote: Tilt is unassigned.",
-			"leftTurn": {
-				"key": ",",
-				"modifiers": [],
-				"name": ",",
-				"virtual": true
-			},
-			"rightTurn": {
-				"key": ".",
-				"modifiers": [],
-				"name": ".",
-				"virtual": true
-			},
-			"turnSensitivity": 8
-		}
+            "name": "horizontalZoom",
+            "label": "View.Horizontal Zoom",
+            "info": "Turn to zoom in and out of track view.\n\nNote: Tilt is unassigned.",
+            "leftTurn": {
+                "key": "left",
+                "modifiers": [
+                    "command"
+                ],
+                "name": "",
+                "virtual": true
+            },
+            "rightTurn": {
+                "key": "right",
+                "modifiers": [
+                    "command"
+                ],
+                "name": "",
+                "virtual": true
+            },
+            "turnSensitivity": 7
+        },
+        {
+            "name": "playhead",
+            "label": "Transport.Playhead (Bars)",
+            "info": "Turn to move the playhead backwards and forwards by 1 bar at a time.\n\nNote: Tilt is unassigned.",
+            "leftTurn": {
+                "key": ",",
+                "modifiers": [],
+                "name": ",",
+                "virtual": true
+            },
+            "rightTurn": {
+                "key": ".",
+                "modifiers": [],
+                "name": ".",
+                "virtual": true
+            },
+            "turnSensitivity": 8
+        }
     ]
 }
