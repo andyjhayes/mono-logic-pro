@@ -1,2 +1,1 @@
-# mono-logic-pro
-Monogram + Logic Pro (Unofficial)
+# Monogram + Apple Logic Pro (Unofficial)
