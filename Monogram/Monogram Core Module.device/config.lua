@@ -1,17 +1,10 @@
--- Define the knobs, buttons, etc. of the device
--- This is also used to check if this device is a match (model, manufacturer and/or device inquiry status)
 function controller_info()
     return {
-        -- model name for this device
         model = 'Monogram Core Module',
-        -- manufacturer name for this device
         manufacturer = 'Monogram',
-        -- a string for the UI that explains if a certain preset/scene/patch has to be selected on the device
         preset_name = 'Logic Pro',
-        -- All buttons, knobs, keyboard, possible pedals are defined here
         items = {
-
-            -- The default midiType is 'Absolute', it only has to be defined if it is different
+            
             -- GENERAL MIDI CC MESSAGES (Ch. 1, Absolute)
             {name='Pitch Bend', label='Pitch Bend', objectType='Wheel', midi={0xE0,MIDI_MSB,MIDI_LSB}},
             {name='Modulation', label='Modulation', objectType='Wheel', midi={0xB0,0x01,MIDI_LSB}},
