@@ -4,7 +4,7 @@ This is a collection of Monogram and Palette Gear module presets for Logic Pro.
 
 ### Prerequisites ###
 
-- Mac computer running macOS 10.13 or higher
+- Mac (macOS 10.13 or later required)
 - [Monogram Creator](https://monogramcc.com/download/) (Version 4.1 or later recommended)
 - [Monogram Creative Console](https://monogramcc.com/) (note:  Palette Gear core modules are _not_ supported. Palette Gear dial, button, or slider modules _must_ be connected to a Monogram core module to be supported.)
 - [Logic Pro](https://www.apple.com/ca/logic-pro/) (Version 10.0 or later required, 10.6 or later recommended)
