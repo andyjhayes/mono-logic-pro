@@ -1,6 +1,6 @@
 # Monogram + Apple Logic Pro (Unofficial)
 
-This is a collection of Monogram and Palette Gear module presets for Capture One on Windows.
+This is a collection of Monogram and Palette Gear module presets for Logic Pro.
 
 ### Prerequisites ###
 
