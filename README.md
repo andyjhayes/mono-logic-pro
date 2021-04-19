@@ -23,10 +23,10 @@ This is a collection of Monogram module presets for Logic Pro.
 
 ### Add integration bundle to Monogram Creator ###
 
-1. In Monogram Creator, go to File > Preferences > Integrations.
+1. In Monogram Creator, go to Creator > Preferences > Integrations.
 2. Hit the + button (lower right); this should open a file browser.
 3. Browse for your <code>mono-logic-pro-main</code> folder, then double-click it to look inside for the <code>logic</code> folder.
-4. Select the <code>logic</code> folder without opening it, then hit "Select Folder" (bottom right).
+4. Choose the <code>logic</code> folder, then hit "Open" (bottom right).
 
 ---
 
